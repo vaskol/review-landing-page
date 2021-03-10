@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Spartan', sans-serif;
+	font-size: 100%;
+}
+
+body {
+	height: 100vh;
+}
+
+h2 {
+	padding: 2em 1em 0 1em;
+	font-size: $font-sm;
+	font-weight: $font-bolder;
+}
+
+h3 {
+	padding: 0 1em;
+	font-size: $font-sm;
+	font-weight: $font-light;
+}
+
+h4 {
+	padding: 0 1em;
+	font-size: $font-med;
+	font-weight: $font-bolder;
+}
+
+p {
+	padding: 2em 1em 0 1em;
+	font-size: $font-sm;
+	margin-top: 1rem;
+}
+
+// Flexbox Properties
+.flex {
+	display: flex;
+	&-jc-sb {
+		justify-content: space-between;
+	}
+	&-jc-c {
+		justify-content: center;
+	}
+	&-ai-c {
+		align-items: center;
+	}
+	&-f-d-c {
+		flex-direction: column;
+	}
+	&-f-d-r {
+		flex-direction: row;
+	}
+}
+

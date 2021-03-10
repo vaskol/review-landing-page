@@ -1,0 +1,17 @@
+footer {
+	color: $dark_gray;
+	font-size: $font-sm;
+	.attribution {
+		margin-top: -1rem;
+		a {
+			text-decoration-line: none;
+			&:visited {
+				color: $dark_blue;
+			}
+			&:hover {
+				color: $dark_gray;
+			}
+		}
+	}
+}
+

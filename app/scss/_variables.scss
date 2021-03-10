@@ -1,0 +1,20 @@
+
+// Colors
+$blue: hsl(333, 80%, 67%);
+$dark_blue: hsl(300, 43%, 22%);
+$grayish_blue: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+$dark_gray: hsl(303, 10%, 53%);
+
+// Font Sizes
+$font-sm: 0.7rem; // 12px/16px default
+$font-med: 1.0rem; // 18px/16px default
+$font-lg: 4.0rem;
+
+// Font Weights
+$font-light:400;
+$font-bold:500;
+$font-bolder:700;
+
+// Box Shadow
+$shade:0px 3px 5px $dark_blue;
