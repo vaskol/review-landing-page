@@ -1,17 +1,39 @@
 // Breakpoints
 // 640px, 1024px, 1400px
-$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
-// 375px, 1023px, 1399px 
-$breakpoints-down: ("small": "23.4375", "medium": "63.9375em", "large": "87.4375em");
+$breakpoints-up: (
+    "small": "23.4375",
+    "medium": "40em",
+    "large": "64em",
+    "xlarge": "87.5em",
+);
+// 375px, 1023px, 1399px
+$breakpoints-down: (
+    "small": "23.4375",
+    "medium": "59.9375em",
+    "large": "87.4375em",
+);
 @mixin breakpoint-up($size) {
-	@media (min-width: map-get($breakpoints-up, $size)) {
-		@content;
-	}
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
 }
 
 @mixin breakpoint-down($size) {
-	@media (max-width: map-get($breakpoints-down, $size)) {
-		@content;
-	}
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
 }
 
+@mixin indent($minChild, $maxChild, $orient) {
+    @for $i from $minChild to $maxChild {
+        &:nth-child(#{$i}) {
+            $n: 3;
+            $n: ($i)- ($n);
+            @if $orient==top {
+                margin-top: (($n) * 5rem);
+            } @else if $orient == left {
+                margin-left: (($n) * 5rem);
+            }
+        }
+    }
+}
